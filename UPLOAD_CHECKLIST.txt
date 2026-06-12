@@ -21,28 +21,26 @@ Expected GitHub Pages URLs after upload (what the app reads):
 Verify after upload:
   1. Open each Pages URL; confirm the content matches this payload.
   2. Confirm SHA-256 of the uploaded Master.jsonl matches checksums/SHA256SUMS.txt:
-       972dabf83e4484d6c8441ad5a9f85726f9fd2e9c20d0d5ef9b4f756839135a6b  Master.jsonl
+       e547d1c1a5a4113b56b98e6c1c5b7eb4d9d6c4c7d3312f816274ab3071cf1f93  Master.jsonl
        6a65dc330ec1ad57331466d7686ff65f8ad21f6dc04a362b16b0480e4857de6f  latest.json
-  3. Launch Game Manager; it should load the alpha game list (1 game, 47 mods).
+  3. Launch Game Manager; it should load the alpha game list (1 game, 45 mods).
   4. latest.json is non-locking (update_required=false, download_url=""), so no
      "Update required" screen should appear.
 
 Payload contents (counts):
   GAME records ........... 1
-  Parent mods ........... 47
-  Child files ........... 69
-  Essential parents ..... 8
-  Optional parents ...... 39
+  Parent mods ........... 45
+  Child files ........... 63
+  Essential parents ..... 7
+  Optional parents ...... 38
   Duplicate child names .. 0
-  Files without a size ... 7
-    - ORL43-49931-4-3-1616948045.7z
-    - AliveWaters patch-3829.7z
-    - OCO Patch 6547-73143.7z
-    - magic visuals overhaul patch 5154-2132.7z
+  Files without a size ... 1
     - Insanity's Improved Armoury Compilation v1.21.7z
-    - Immersive Interiors Patch 4465.7z
-    - High Quality Sowflakes-46625-1-0.zip
-  Files without a page ... 6
+  Files without a page ... 0
+    - none
+
+Removed from this masterlist because the only known source was the old Wasabi
+storage mirror:
     - ORL43-49931-4-3-1616948045.7z
     - AliveWaters patch-3829.7z
     - OCO Patch 6547-73143.7z
@@ -50,8 +48,8 @@ Payload contents (counts):
     - Immersive Interiors Patch 4465.7z
     - High Quality Sowflakes-46625-1-0.zip
 
-Operator to finish before/after upload: fill the sizes and the download pages
-for the files listed above (the Dev Panel flags both). Never invent values.
+Operator to finish before/after upload: fill the remaining missing size(s) and
+any missing source pages through the Dev Panel. Never invent values.
 
 Next pass (separate approval): build the installer, upload to GitHub Releases,
 set latest.json download_url to the release asset, then consider
