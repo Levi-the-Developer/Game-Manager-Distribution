@@ -1,0 +1,58 @@
+Game Manager - GitHub Upload Checklist (alpha game list)
+========================================================
+
+This payload stages the alpha GAME LIST and a NON-LOCKING update policy. It is
+NOT the installer. Do not create a GitHub Release in this step.
+
+Distribution repo:
+  https://github.com/Levi-the-Developer/Game-Manager-Distribution
+
+Files to copy (from this folder -> repo), preserving paths:
+
+  channels/alpha/Master.jsonl   ->  channels/alpha/Master.jsonl
+  updates/alpha/latest.json     ->  updates/alpha/latest.json
+
+(SHA256SUMS.txt and the .txt files are for your verification.)
+
+Expected GitHub Pages URLs after upload (what the app reads):
+  https://levi-the-developer.github.io/Game-Manager-Distribution/channels/alpha/Master.jsonl
+  https://levi-the-developer.github.io/Game-Manager-Distribution/updates/alpha/latest.json
+
+Verify after upload:
+  1. Open each Pages URL; confirm the content matches this payload.
+  2. Confirm SHA-256 of the uploaded Master.jsonl matches checksums/SHA256SUMS.txt:
+       972dabf83e4484d6c8441ad5a9f85726f9fd2e9c20d0d5ef9b4f756839135a6b  Master.jsonl
+       6a65dc330ec1ad57331466d7686ff65f8ad21f6dc04a362b16b0480e4857de6f  latest.json
+  3. Launch Game Manager; it should load the alpha game list (1 game, 47 mods).
+  4. latest.json is non-locking (update_required=false, download_url=""), so no
+     "Update required" screen should appear.
+
+Payload contents (counts):
+  GAME records ........... 1
+  Parent mods ........... 47
+  Child files ........... 69
+  Essential parents ..... 8
+  Optional parents ...... 39
+  Duplicate child names .. 0
+  Files without a size ... 7
+    - ORL43-49931-4-3-1616948045.7z
+    - AliveWaters patch-3829.7z
+    - OCO Patch 6547-73143.7z
+    - magic visuals overhaul patch 5154-2132.7z
+    - Insanity's Improved Armoury Compilation v1.21.7z
+    - Immersive Interiors Patch 4465.7z
+    - High Quality Sowflakes-46625-1-0.zip
+  Files without a page ... 6
+    - ORL43-49931-4-3-1616948045.7z
+    - AliveWaters patch-3829.7z
+    - OCO Patch 6547-73143.7z
+    - magic visuals overhaul patch 5154-2132.7z
+    - Immersive Interiors Patch 4465.7z
+    - High Quality Sowflakes-46625-1-0.zip
+
+Operator to finish before/after upload: fill the sizes and the download pages
+for the files listed above (the Dev Panel flags both). Never invent values.
+
+Next pass (separate approval): build the installer, upload to GitHub Releases,
+set latest.json download_url to the release asset, then consider
+update_required / minimum_supported_version.

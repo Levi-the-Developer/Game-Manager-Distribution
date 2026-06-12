@@ -1,0 +1,2 @@
+972dabf83e4484d6c8441ad5a9f85726f9fd2e9c20d0d5ef9b4f756839135a6b  channels/alpha/Master.jsonl
+6a65dc330ec1ad57331466d7686ff65f8ad21f6dc04a362b16b0480e4857de6f  updates/alpha/latest.json

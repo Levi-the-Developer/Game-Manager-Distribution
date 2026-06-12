@@ -1,8 +1,8 @@
 {
   "channel": "alpha",
-  "latest_version": "0.0.0",
+  "latest_version": "1.0.0-alpha.1",
   "minimum_supported_version": "0.0.0",
   "update_required": false,
-  "notes": "No update published yet.",
+  "notes": "Alpha game list staging. Installer release pending.",
   "download_url": ""
 }
