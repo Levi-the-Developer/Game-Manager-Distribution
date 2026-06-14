@@ -12,7 +12,7 @@ GitHub Releases hosts the public alpha installer.
   UPLOAD_CHECKLIST.txt          Release URLs, checks, and operational notes.
 
 Current public alpha release:
-  https://github.com/Levi-the-Developer/Game-Manager-Distribution/releases/tag/v1.0.0-alpha.3
+  https://github.com/Levi-the-Developer/Game-Manager-Distribution/releases/tag/v1.0.0-alpha.4
 
 Direct installer URL:
-  https://github.com/Levi-the-Developer/Game-Manager-Distribution/releases/download/v1.0.0-alpha.3/Game-Manager-Setup-x64.exe
+  https://github.com/Levi-the-Developer/Game-Manager-Distribution/releases/download/v1.0.0-alpha.4/Game-Manager-Setup-x64.exe

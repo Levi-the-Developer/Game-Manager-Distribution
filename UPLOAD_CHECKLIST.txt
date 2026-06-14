@@ -8,10 +8,10 @@ Distribution repo:
   https://github.com/Levi-the-Developer/Game-Manager-Distribution
 
 Public release:
-  https://github.com/Levi-the-Developer/Game-Manager-Distribution/releases/tag/v1.0.0-alpha.3
+  https://github.com/Levi-the-Developer/Game-Manager-Distribution/releases/tag/v1.0.0-alpha.4
 
 Direct installer URL:
-  https://github.com/Levi-the-Developer/Game-Manager-Distribution/releases/download/v1.0.0-alpha.3/Game-Manager-Setup-x64.exe
+  https://github.com/Levi-the-Developer/Game-Manager-Distribution/releases/download/v1.0.0-alpha.4/Game-Manager-Setup-x64.exe
 
 Pages URLs the app reads:
   https://levi-the-developer.github.io/Game-Manager-Distribution/channels/alpha/Master.jsonl
@@ -19,18 +19,18 @@ Pages URLs the app reads:
 
 Current Pages SHA-256 values:
   f16d235b885edf379f39c0f131d39a9242ab42d28cbf92d0eeea932ec9a7939e  channels/alpha/Master.jsonl
-  e491d3452c1a9f60c54e677fc4366980ed1fbeac7389ed77dfe765f7389b765f  updates/alpha/latest.json
+  396c72d2b4d1bcb2957ad30d7f8fd1d13686bcc9f8b5ec49a45847f7ae90da1a  updates/alpha/latest.json
 
 Verification:
   1. Open each Pages URL and confirm the content matches this repo.
   2. Confirm SHA-256 values match checksums/SHA256SUMS.txt.
   3. Confirm latest.json is non-locking for older builds: update_required=false,
-     latest_version=1.0.0-alpha.3.
+     latest_version=1.0.0-alpha.4.
   4. Confirm latest.json download_url points at the release installer above.
   5. Download the release installer and confirm its SHA-256 against the release
      SHA256SUMS.txt asset.
      Current installer SHA-256:
-       C4667793D5BD2FAECE5C0EE24BF5ABFD798D7F510778DBEA61C7556445E79F39
+       748E578D3050E7637E89A67353614F18096174F0162A6DBE1D025AFB2BC3CD7F
   6. Install to a clean test folder and confirm the app launches without a
      localhost dependency.
 
@@ -52,8 +52,9 @@ Panel before publishing. Never invent sizes or source pages.
 Packaging notes:
   - The alpha installer is unsigned. Windows SmartScreen may warn until a code
     signing certificate is added.
-  - update_required is false for alpha.3 so existing alpha users are not hard
-    locked; the app may still surface an update when its saved manifest differs.
+  - update_required is false for alpha.4 so existing alpha users are not hard
+    locked; alpha.3 and older clients can surface the newer installer when
+    their update policy reports a newer version.
   - Keep app source outside this distribution repo unless Levi explicitly
     decides to publish source later.
 

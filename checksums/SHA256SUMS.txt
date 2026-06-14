@@ -1,2 +1,2 @@
 f16d235b885edf379f39c0f131d39a9242ab42d28cbf92d0eeea932ec9a7939e  channels/alpha/Master.jsonl
-e491d3452c1a9f60c54e677fc4366980ed1fbeac7389ed77dfe765f7389b765f  updates/alpha/latest.json
+396c72d2b4d1bcb2957ad30d7f8fd1d13686bcc9f8b5ec49a45847f7ae90da1a  updates/alpha/latest.json
