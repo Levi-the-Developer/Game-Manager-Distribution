@@ -19,13 +19,13 @@ Pages URLs the app reads:
 
 Current Pages SHA-256 values:
   f16d235b885edf379f39c0f131d39a9242ab42d28cbf92d0eeea932ec9a7939e  channels/alpha/Master.jsonl
-  396c72d2b4d1bcb2957ad30d7f8fd1d13686bcc9f8b5ec49a45847f7ae90da1a  updates/alpha/latest.json
+  be36d70ccf72d69db882a4cbe5f765a42c4e72beb801b57da5cbe6178ac025c8  updates/alpha/latest.json
 
 Verification:
   1. Open each Pages URL and confirm the content matches this repo.
   2. Confirm SHA-256 values match checksums/SHA256SUMS.txt.
-  3. Confirm latest.json is non-locking for older builds: update_required=false,
-     latest_version=1.0.0-alpha.4.
+  3. Confirm latest.json requires older alpha builds to update:
+     update_required=true, latest_version=1.0.0-alpha.4.
   4. Confirm latest.json download_url points at the release installer above.
   5. Download the release installer and confirm its SHA-256 against the release
      SHA256SUMS.txt asset.
@@ -52,9 +52,9 @@ Panel before publishing. Never invent sizes or source pages.
 Packaging notes:
   - The alpha installer is unsigned. Windows SmartScreen may warn until a code
     signing certificate is added.
-  - update_required is false for alpha.4 so existing alpha users are not hard
-    locked; alpha.3 and older clients can surface the newer installer when
-    their update policy reports a newer version.
+  - update_required is true for alpha.4 so alpha.3 and older clients with no
+    soft-update banner can still reach the existing Update Required screen.
+    Alpha.4 itself is not locked because it equals latest_version.
   - Keep app source outside this distribution repo unless Levi explicitly
     decides to publish source later.
 
