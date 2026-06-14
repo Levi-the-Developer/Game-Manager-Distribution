@@ -8,10 +8,10 @@ Distribution repo:
   https://github.com/Levi-the-Developer/Game-Manager-Distribution
 
 Public release:
-  https://github.com/Levi-the-Developer/Game-Manager-Distribution/releases/tag/v1.0.0-alpha.1
+  https://github.com/Levi-the-Developer/Game-Manager-Distribution/releases/tag/v1.0.0-alpha.2
 
 Direct installer URL:
-  https://github.com/Levi-the-Developer/Game-Manager-Distribution/releases/download/v1.0.0-alpha.1/Game-Manager-Setup-x64.exe
+  https://github.com/Levi-the-Developer/Game-Manager-Distribution/releases/download/v1.0.0-alpha.2/Game-Manager-Setup-x64.exe
 
 Pages URLs the app reads:
   https://levi-the-developer.github.io/Game-Manager-Distribution/channels/alpha/Master.jsonl
@@ -19,7 +19,7 @@ Pages URLs the app reads:
 
 Current Pages SHA-256 values:
   f0f8264f19aa3ac6174bd3fcfa8d713a8db11ef0a69201c4995a96ce399a6c23  channels/alpha/Master.jsonl
-  1e66c7e3326eef21464a3aa1218c0a5600b7525d8d679c2e329d241ef6b003f9  updates/alpha/latest.json
+  0485496f47f0e6f41461955b3cac0c72cb0216c8c67de526f8cf7461c13c9fb6  updates/alpha/latest.json
 
 Verification:
   1. Open each Pages URL and confirm the content matches this repo.

@@ -1,8 +1,8 @@
 {
   "channel": "alpha",
-  "latest_version": "1.0.0-alpha.1",
+  "latest_version": "1.0.0-alpha.2",
   "minimum_supported_version": "0.0.0",
   "update_required": false,
-  "notes": "Alpha installer is available. This build is unsigned, so Windows SmartScreen may show a warning until code signing is added.",
-  "download_url": "https://github.com/Levi-the-Developer/Game-Manager-Distribution/releases/download/v1.0.0-alpha.1/Game-Manager-Setup-x64.exe"
+  "notes": "Alpha installer repair release. This build installs WebView2Loader.dll beside game-manager.exe and is unsigned, so Windows SmartScreen may show a warning until code signing is added.",
+  "download_url": "https://github.com/Levi-the-Developer/Game-Manager-Distribution/releases/download/v1.0.0-alpha.2/Game-Manager-Setup-x64.exe"
 }
