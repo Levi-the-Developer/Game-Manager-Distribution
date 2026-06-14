@@ -18,7 +18,7 @@ Pages URLs the app reads:
   https://levi-the-developer.github.io/Game-Manager-Distribution/updates/alpha/latest.json
 
 Current Pages SHA-256 values:
-  26c1864cfbf9383cd843a555a419b2b07b4f12a4ce375dd9f94c86de149d4459  channels/alpha/Master.jsonl
+  65878c6559599cac0524977041331ebf25ea35fa02da8b677a10dcaf436ddcf4  channels/alpha/Master.jsonl
   0485496f47f0e6f41461955b3cac0c72cb0216c8c67de526f8cf7461c13c9fb6  updates/alpha/latest.json
 
 Verification:
@@ -61,5 +61,6 @@ Packaging notes:
   - update_required remains false for this first public alpha.
   - Keep app source outside this distribution repo unless Levi explicitly
     decides to publish source later.
+
 
 
