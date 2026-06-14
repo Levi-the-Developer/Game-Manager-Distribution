@@ -39,8 +39,8 @@ Payload contents (counts):
   Files without a page ... 0
     - none
 
-Removed from this masterlist because the only known source was the old Wasabi
-storage mirror:
+Removed from this masterlist because the only known source was a retired
+private storage mirror:
     - ORL43-49931-4-3-1616948045.7z
     - AliveWaters patch-3829.7z
     - OCO Patch 6547-73143.7z

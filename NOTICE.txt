@@ -1,0 +1,29 @@
+Game Manager Distribution Notice
+================================
+
+Game Manager, AMG branding, distribution manifests, update metadata, installer
+metadata, and release packaging are proprietary to Levi-the-Developer unless a
+specific file says otherwise.
+
+This distribution repository is the authorized public distribution boundary for
+Game Manager alpha builds and public release payloads:
+
+  https://github.com/Levi-the-Developer/Game-Manager-Distribution
+
+Third-party notices:
+
+- 7-Zip may be bundled with Game Manager releases as the archive extraction
+  helper. 7-Zip is copyright its authors and is licensed separately. When it is
+  included, its License.txt and NOTICE.txt files must remain bundled beside
+  the 7z.exe and 7z.dll files.
+- Microsoft WebView2 components, if present or required, are owned by Microsoft
+  and governed by Microsoft's terms.
+- Game mods, mod pages, downloaded archives, and game files are owned by their
+  respective authors or rights holders. Game Manager does not grant rights to
+  redistribute third-party mods or game content.
+
+Operator release rule:
+
+Do not publish a Game Manager installer or release asset unless this root
+LICENSE file, this NOTICE file, and all bundled third-party notices are present
+in the release payload.
