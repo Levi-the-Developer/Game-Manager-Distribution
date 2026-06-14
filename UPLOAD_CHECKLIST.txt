@@ -18,7 +18,7 @@ Pages URLs the app reads:
   https://levi-the-developer.github.io/Game-Manager-Distribution/updates/alpha/latest.json
 
 Current Pages SHA-256 values:
-  65878c6559599cac0524977041331ebf25ea35fa02da8b677a10dcaf436ddcf4  channels/alpha/Master.jsonl
+  f16d235b885edf379f39c0f131d39a9242ab42d28cbf92d0eeea932ec9a7939e  channels/alpha/Master.jsonl
   ec31639ab0abd7f2cf244068f5e70e11e29bc2b7fc496e510f50055fd870ac2d  updates/alpha/latest.json
 
 Verification:
@@ -36,27 +36,18 @@ Verification:
 
 Alpha game list contents:
   GAME records ........... 1
-  Parent mods ........... 45
-  Child files ........... 63
-  Essential parents ..... 7
-  Optional parents ...... 38
+  Parent mods ........... 5
+  Child files ........... 5
+  Essential parents ..... 3
+  Optional parents ...... 2
   Duplicate child names .. 0
-  Files without a size ... 1
-    - Insanity's Improved Armoury Compilation v1.21.7z
+  Files without a size ... 0
+    - none
   Files without a page ... 0
     - none
 
-Removed from this masterlist because the only known source was a retired
-private storage mirror:
-    - ORL43-49931-4-3-1616948045.7z
-    - AliveWaters patch-3829.7z
-    - OCO Patch 6547-73143.7z
-    - magic visuals overhaul patch 5154-2132.7z
-    - Immersive Interiors Patch 4465.7z
-    - High Quality Sowflakes-46625-1-0.zip
-
-Operator to finish before/after upload: fill the remaining missing size(s) and
-any missing source pages through the Dev Panel. Never invent values.
+Operator to finish before/after upload: verify any list change through the Dev
+Panel before publishing. Never invent sizes or source pages.
 
 Packaging notes:
   - The alpha installer is unsigned. Windows SmartScreen may warn until a code
