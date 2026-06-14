@@ -8,10 +8,10 @@ Distribution repo:
   https://github.com/Levi-the-Developer/Game-Manager-Distribution
 
 Public release:
-  https://github.com/Levi-the-Developer/Game-Manager-Distribution/releases/tag/v1.0.0-alpha.2
+  https://github.com/Levi-the-Developer/Game-Manager-Distribution/releases/tag/v1.0.0-alpha.3
 
 Direct installer URL:
-  https://github.com/Levi-the-Developer/Game-Manager-Distribution/releases/download/v1.0.0-alpha.2/Game-Manager-Setup-x64.exe
+  https://github.com/Levi-the-Developer/Game-Manager-Distribution/releases/download/v1.0.0-alpha.3/Game-Manager-Setup-x64.exe
 
 Pages URLs the app reads:
   https://levi-the-developer.github.io/Game-Manager-Distribution/channels/alpha/Master.jsonl
@@ -19,12 +19,13 @@ Pages URLs the app reads:
 
 Current Pages SHA-256 values:
   65878c6559599cac0524977041331ebf25ea35fa02da8b677a10dcaf436ddcf4  channels/alpha/Master.jsonl
-  0485496f47f0e6f41461955b3cac0c72cb0216c8c67de526f8cf7461c13c9fb6  updates/alpha/latest.json
+  354f69d66dee09ee1520fc2f5faa0cf163af1a20d0f1e82e76ca6c3b7280ee4a  updates/alpha/latest.json
 
 Verification:
   1. Open each Pages URL and confirm the content matches this repo.
   2. Confirm SHA-256 values match checksums/SHA256SUMS.txt.
-  3. Confirm latest.json is non-locking: update_required=false.
+  3. Confirm latest.json is locking for older builds: update_required=true,
+     latest_version=1.0.0-alpha.3.
   4. Confirm latest.json download_url points at the release installer above.
   5. Download the release installer and confirm its SHA-256 against the release
      SHA256SUMS.txt asset.
@@ -58,7 +59,8 @@ any missing source pages through the Dev Panel. Never invent values.
 Packaging notes:
   - The alpha installer is unsigned. Windows SmartScreen may warn until a code
     signing certificate is added.
-  - update_required remains false for this first public alpha.
+  - update_required is true for alpha.3 so alpha.1/alpha.2 installs are pushed
+    to the fixed installer and update-flow build.
   - Keep app source outside this distribution repo unless Levi explicitly
     decides to publish source later.
 
