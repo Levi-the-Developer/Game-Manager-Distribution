@@ -3,6 +3,7 @@
   "latest_version": "1.0.0-alpha.3",
   "minimum_supported_version": "0.0.0",
   "update_required": true,
-  "notes": "Alpha update-flow release. This build removes Repair install from the normal workflow, adds Ready-panel masterlist update handling, hides bundled archive extractor windows, and is unsigned so Windows SmartScreen may show a warning until code signing is added.",
-  "download_url": "https://github.com/Levi-the-Developer/Game-Manager-Distribution/releases/download/v1.0.0-alpha.3/Game-Manager-Setup-x64.exe"
+  "notes": "Alpha public build. This installer includes the runtime app, operational README, required notices, WebView2 loader, and bundled archive extractor. Ready includes Update, Reinstall, and Restore; selected-mod installs use the current masterlist; archive extractor work runs hidden. The installer is unsigned, so Windows SmartScreen may show a warning until code signing is added.",
+  "download_url": "https://github.com/Levi-the-Developer/Game-Manager-Distribution/releases/download/v1.0.0-alpha.3/Game-Manager-Setup-x64.exe",
+  "sha256": "C4667793D5BD2FAECE5C0EE24BF5ABFD798D7F510778DBEA61C7556445E79F39"
 }

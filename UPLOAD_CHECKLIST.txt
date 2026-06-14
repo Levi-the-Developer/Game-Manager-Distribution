@@ -18,8 +18,8 @@ Pages URLs the app reads:
   https://levi-the-developer.github.io/Game-Manager-Distribution/updates/alpha/latest.json
 
 Current Pages SHA-256 values:
-  65878c6559599cac0524977041331ebf25ea35fa02da8b677a10dcaf436ddcf4  channels/alpha/Master.jsonl
-  354f69d66dee09ee1520fc2f5faa0cf163af1a20d0f1e82e76ca6c3b7280ee4a  updates/alpha/latest.json
+  26c1864cfbf9383cd843a555a419b2b07b4f12a4ce375dd9f94c86de149d4459  channels/alpha/Master.jsonl
+  ec31639ab0abd7f2cf244068f5e70e11e29bc2b7fc496e510f50055fd870ac2d  updates/alpha/latest.json
 
 Verification:
   1. Open each Pages URL and confirm the content matches this repo.
@@ -29,6 +29,8 @@ Verification:
   4. Confirm latest.json download_url points at the release installer above.
   5. Download the release installer and confirm its SHA-256 against the release
      SHA256SUMS.txt asset.
+     Current installer SHA-256:
+       C4667793D5BD2FAECE5C0EE24BF5ABFD798D7F510778DBEA61C7556445E79F39
   6. Install to a clean test folder and confirm the app launches without a
      localhost dependency.
 
