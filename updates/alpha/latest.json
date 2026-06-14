@@ -3,6 +3,6 @@
   "latest_version": "1.0.0-alpha.1",
   "minimum_supported_version": "0.0.0",
   "update_required": false,
-  "notes": "Alpha game list staging. Installer release pending.",
-  "download_url": ""
+  "notes": "Alpha installer is available. This build is unsigned, so Windows SmartScreen may show a warning until code signing is added.",
+  "download_url": "https://github.com/Levi-the-Developer/Game-Manager-Distribution/releases/download/v1.0.0-alpha.1/Game-Manager-Setup-x64.exe"
 }
