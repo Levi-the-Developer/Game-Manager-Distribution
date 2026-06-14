@@ -1,33 +1,37 @@
-Game Manager - GitHub Upload Checklist (alpha game list)
-========================================================
+Game Manager - Public Alpha Distribution Checklist
+==================================================
 
-This payload stages the alpha GAME LIST and a NON-LOCKING update policy. It is
-NOT the installer. Do not create a GitHub Release in this step.
+This repository is the public distribution boundary for Game Manager alpha.
+GitHub Pages serves runtime metadata and GitHub Releases serves the installer.
 
 Distribution repo:
   https://github.com/Levi-the-Developer/Game-Manager-Distribution
 
-Files to copy (from this folder -> repo), preserving paths:
+Public release:
+  https://github.com/Levi-the-Developer/Game-Manager-Distribution/releases/tag/v1.0.0-alpha.1
 
-  channels/alpha/Master.jsonl   ->  channels/alpha/Master.jsonl
-  updates/alpha/latest.json     ->  updates/alpha/latest.json
+Direct installer URL:
+  https://github.com/Levi-the-Developer/Game-Manager-Distribution/releases/download/v1.0.0-alpha.1/Game-Manager-Setup-x64.exe
 
-(SHA256SUMS.txt and the .txt files are for your verification.)
-
-Expected GitHub Pages URLs after upload (what the app reads):
+Pages URLs the app reads:
   https://levi-the-developer.github.io/Game-Manager-Distribution/channels/alpha/Master.jsonl
   https://levi-the-developer.github.io/Game-Manager-Distribution/updates/alpha/latest.json
 
-Verify after upload:
-  1. Open each Pages URL; confirm the content matches this payload.
-  2. Confirm SHA-256 of the uploaded Master.jsonl matches checksums/SHA256SUMS.txt:
-       e547d1c1a5a4113b56b98e6c1c5b7eb4d9d6c4c7d3312f816274ab3071cf1f93  Master.jsonl
-       6a65dc330ec1ad57331466d7686ff65f8ad21f6dc04a362b16b0480e4857de6f  latest.json
-  3. Launch Game Manager; it should load the alpha game list (1 game, 45 mods).
-  4. latest.json is non-locking (update_required=false, download_url=""), so no
-     "Update required" screen should appear.
+Current Pages SHA-256 values:
+  f0f8264f19aa3ac6174bd3fcfa8d713a8db11ef0a69201c4995a96ce399a6c23  channels/alpha/Master.jsonl
+  1e66c7e3326eef21464a3aa1218c0a5600b7525d8d679c2e329d241ef6b003f9  updates/alpha/latest.json
 
-Payload contents (counts):
+Verification:
+  1. Open each Pages URL and confirm the content matches this repo.
+  2. Confirm SHA-256 values match checksums/SHA256SUMS.txt.
+  3. Confirm latest.json is non-locking: update_required=false.
+  4. Confirm latest.json download_url points at the release installer above.
+  5. Download the release installer and confirm its SHA-256 against the release
+     SHA256SUMS.txt asset.
+  6. Install to a clean test folder and confirm the app launches without a
+     localhost dependency.
+
+Alpha game list contents:
   GAME records ........... 1
   Parent mods ........... 45
   Child files ........... 63
@@ -51,6 +55,9 @@ private storage mirror:
 Operator to finish before/after upload: fill the remaining missing size(s) and
 any missing source pages through the Dev Panel. Never invent values.
 
-Next pass (separate approval): build the installer, upload to GitHub Releases,
-set latest.json download_url to the release asset, then consider
-update_required / minimum_supported_version.
+Packaging notes:
+  - The alpha installer is unsigned. Windows SmartScreen may warn until a code
+    signing certificate is added.
+  - update_required remains false for this first public alpha.
+  - Keep app source outside this distribution repo unless Levi explicitly
+    decides to publish source later.
