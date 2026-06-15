@@ -18,7 +18,7 @@ Pages URLs the app reads:
   https://levi-the-developer.github.io/Game-Manager-Distribution/updates/alpha/latest.json
 
 Current Pages SHA-256 values:
-  891f08e44577258cbf6ff177e7cd20cee8a18d9e8353af0d3566c7fe3f35ca56  channels/alpha/Master.jsonl
+  1023c0848fc2197fb01c6b65eadcd99a78e8dea58254b0867ef963161814b495  channels/alpha/Master.jsonl
   8fd667eaa16aa2bd71ba662a34803539023c28bd63ad63903b5665f8b19a7ba4  updates/alpha/latest.json
 
 Verification:
@@ -36,13 +36,19 @@ Verification:
 
 Alpha game list contents:
   GAME records ........... 1
-  Parent mods ........... 5
-  Child files ........... 5
-  Essential parents ..... 3
-  Optional parents ...... 2
+  Parent mods ........... 43
+  Child files ........... 60
+  Essential parents ..... 7
+  Optional parents ...... 36
   Duplicate child names .. 0
-  Files without a size ... 0
-    - none
+  Files without a size ... 7
+    - LoadingScreens-13012.7z
+    - Weather - All Natural-18305-1-38-1548910107.7z
+    - Immersive Interiors 0-81-34199.zip
+    - ImmersiveInteriorsLandscapeAddOn_1_10-43072-1-10.7z
+    - Umbra Sword Replacer-43762-1-0.7z
+    - Creature Diversity 1.14-26634-1-14.7z
+    - Shiny Septims - Oblivion-23733.rar
   Files without a page ... 0
     - none
 
@@ -55,9 +61,11 @@ Packaging notes:
   - update_required is true for alpha.7 so older alpha clients can reach the
     in-app SHA-verified Update Required flow. Alpha.7 itself is not locked because it
     equals latest_version.
-  - Master.jsonl carries GAME list_version "1"; its applications[] entries add
-    OBMM Setup and 4GB RAM Patch Ready buttons without requiring a reinstall.
-    Future mod-file/order changes must increment this value for the Ready Update action to appear.
+  - Master.jsonl carries GAME list_version "2" and the Resources + Graphics
+    Nexus/GitHub-sourced list. The Ready Update action appears when an installed
+    list has a lower version.
+  - applications[] intentionally keeps 4gb patch.exe and obmm_setup.exe as
+    launchable setup/tool entries.
   - Keep app source outside this distribution repo unless Levi explicitly
     decides to publish source later.
 
