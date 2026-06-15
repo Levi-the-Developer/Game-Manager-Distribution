@@ -8,10 +8,10 @@ Distribution repo:
   https://github.com/Levi-the-Developer/Game-Manager-Distribution
 
 Public release:
-  https://github.com/Levi-the-Developer/Game-Manager-Distribution/releases/tag/v1.0.0-alpha.5
+  https://github.com/Levi-the-Developer/Game-Manager-Distribution/releases/tag/v1.0.0-alpha.6
 
 Direct installer URL:
-  https://github.com/Levi-the-Developer/Game-Manager-Distribution/releases/download/v1.0.0-alpha.5/Game-Manager-Setup-x64.exe
+  https://github.com/Levi-the-Developer/Game-Manager-Distribution/releases/download/v1.0.0-alpha.6/Game-Manager-Setup-x64.exe
 
 Pages URLs the app reads:
   https://levi-the-developer.github.io/Game-Manager-Distribution/channels/alpha/Master.jsonl
@@ -19,18 +19,18 @@ Pages URLs the app reads:
 
 Current Pages SHA-256 values:
   e03b359074d3b746ef761f84a4f0e753c173c6662e132f882a6bf35795613eba  channels/alpha/Master.jsonl
-  bb9e850b71fb362fe10ecf1f0dd010fb0e4228f522990784ed5adaaa6a94b231  updates/alpha/latest.json
+  d8a8387c1a6be6be491092ea33070ec187f429152ebdedef84db529bf01a39d8  updates/alpha/latest.json
 
 Verification:
   1. Open each Pages URL and confirm the content matches this repo.
   2. Confirm SHA-256 values match checksums/SHA256SUMS.txt.
   3. Confirm latest.json requires older alpha builds to update:
-     update_required=true, latest_version=1.0.0-alpha.5.
+     update_required=true, latest_version=1.0.0-alpha.6.
   4. Confirm latest.json download_url points at the release installer above.
   5. Download the release installer and confirm its SHA-256 against the release
      SHA256SUMS.txt asset.
      Current installer SHA-256:
-       550518714EB6ABE42E2109EDE81323623807EA1E011266E3FE631BDDD7B6E552
+       C9263678C745FF70FAB3B2F525B2129B56233E8B05247D273D726A949083AFC4
   6. Install to a clean test folder and confirm the app launches without a
      localhost dependency.
 
@@ -52,8 +52,8 @@ Panel before publishing. Never invent sizes or source pages.
 Packaging notes:
   - The alpha installer is unsigned. Windows SmartScreen may warn until a code
     signing certificate is added.
-  - update_required is true for alpha.5 so older alpha clients can reach the
-    existing Update Required screen. Alpha.5 itself is not locked because it
+  - update_required is true for alpha.6 so older alpha clients can reach the
+    in-app SHA-verified Update Required flow. Alpha.6 itself is not locked because it
     equals latest_version.
   - Master.jsonl carries GAME list_version "1"; future masterlist changes must
     increment this value for the Ready Update action to appear.
