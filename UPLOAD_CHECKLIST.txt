@@ -18,7 +18,7 @@ Pages URLs the app reads:
   https://levi-the-developer.github.io/Game-Manager-Distribution/updates/alpha/latest.json
 
 Current Pages SHA-256 values:
-  1023c0848fc2197fb01c6b65eadcd99a78e8dea58254b0867ef963161814b495  channels/alpha/Master.jsonl
+  97063352f79bf83c10af9e0d387146d4214dc385f64464d13dcf0d8ebd9bf408  channels/alpha/Master.jsonl
   8fd667eaa16aa2bd71ba662a34803539023c28bd63ad63903b5665f8b19a7ba4  updates/alpha/latest.json
 
 Verification:
@@ -41,14 +41,12 @@ Alpha game list contents:
   Essential parents ..... 7
   Optional parents ...... 36
   Duplicate child names .. 0
-  Files without a size ... 7
+  Files without a size ... 5
     - LoadingScreens-13012.7z
     - Weather - All Natural-18305-1-38-1548910107.7z
     - Immersive Interiors 0-81-34199.zip
     - ImmersiveInteriorsLandscapeAddOn_1_10-43072-1-10.7z
     - Umbra Sword Replacer-43762-1-0.7z
-    - Creature Diversity 1.14-26634-1-14.7z
-    - Shiny Septims - Oblivion-23733.rar
   Files without a page ... 0
     - none
 
@@ -61,8 +59,8 @@ Packaging notes:
   - update_required is true for alpha.7 so older alpha clients can reach the
     in-app SHA-verified Update Required flow. Alpha.7 itself is not locked because it
     equals latest_version.
-  - Master.jsonl carries GAME list_version "2" and the Resources + Graphics
-    Nexus/GitHub-sourced list. The Ready Update action appears when an installed
+  - Master.jsonl carries GAME list_version "3" and the Resources + Graphics
+    Nexus-sourced list, with xOBSE as the only non-Nexus source. The Ready Update action appears when an installed
     list has a lower version.
   - applications[] intentionally keeps 4gb patch.exe and obmm_setup.exe as
     launchable setup/tool entries.
