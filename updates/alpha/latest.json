@@ -3,7 +3,7 @@
   "latest_version": "1.0.0-alpha.8",
   "minimum_supported_version": "0.0.0",
   "update_required": true,
-  "notes": "Alpha public build. Older alpha builds must install this version so the Mod files ready state uses the same selected-archive preflight as Install. This installer includes the runtime app, operational README, required notices, WebView2 loader, bundled archive extractor, in-app SHA-verified self-updates, Dev Panel list-version authoring, and Ready updates based only on higher online list versions. The installer is unsigned, so Windows SmartScreen may show a warning until code signing is added.",
-  "download_url": "https://github.com/Levi-the-Developer/Game-Manager-Distribution/releases/download/v1.0.0-alpha.8/Game-Manager-Setup-x64.exe",
-  "sha256": "F8CFC3B58D57DE0175ED5B57DBBA4543A70952701B3C735E655A19A9BD569273"
+  "notes": "Alpha public build. This stable installer download is kept current for announcements and installs the newest shipped alpha build. The installer includes the runtime app, operational README, required notices, WebView2 loader, bundled archive extractor, in-app SHA-verified self-updates, Dev Panel list-version authoring, and Ready updates based only on higher online list versions. The installer is unsigned, so Windows SmartScreen may show a warning until code signing is added.",
+  "download_url": "https://raw.githubusercontent.com/Levi-the-Developer/Game-Manager-Distribution/main/updates/alpha/Game-Manager-Setup-x64.exe",
+  "sha256": "0FDAC1F5EA132179DEA5ECBFF703A9E432F70CD54FF925672FFDC349D2EF3236"
 }
